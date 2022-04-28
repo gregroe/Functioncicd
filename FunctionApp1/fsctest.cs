@@ -21,7 +21,7 @@ namespace FunctionApp1
             [Queue("outqueue"), StorageAccount("AzureWebJobsStorage")] ICollector<string> msg,
             ILogger log)
         {
-            log.LogInformation("Greg test C# HTTP trigger function processed a request.");
+            log.LogInformation("Greg and Patrick test C# HTTP trigger function processed a request.");
 
             string name = req.Query["name"];
 
